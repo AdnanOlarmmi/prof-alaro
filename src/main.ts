@@ -12,9 +12,14 @@ import { createApp } from 'vue'
 
 // Plugins
 import { registerPlugins } from '@/plugins'
+import './styles/vuetify-overrides.scss'
+
+
 
 const app = createApp(App)
 
 registerPlugins(app)
+
+
 
 app.mount('#app')

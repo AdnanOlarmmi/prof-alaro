@@ -48,8 +48,12 @@
           { title: "About" },
           { title: "Contact" },
         ],
+        pageTitle: "Dr. Alaro"
       };
     },
+    mounted() {
+      document.title = this.pageTitle;
+    }
   };
   </script>
   

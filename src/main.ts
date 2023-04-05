@@ -23,3 +23,11 @@ registerPlugins(app)
 
 
 app.mount('#app')
+
+import Nav from "@/components/Nav.vue";
+
+export default {
+  components: {
+    Nav,
+  },
+};

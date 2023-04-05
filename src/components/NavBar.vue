@@ -4,8 +4,13 @@
     <!-- show nav only on mobile -->
         <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer"></v-app-bar-nav-icon>
 
-
-        <v-toolbar-title>My App</v-toolbar-title>
+    <!-- a link in vuetify -->
+        <v-toolbar-title><v-img
+        contain
+        height="50"
+        width="50"
+        src="@/assets/logo.png"
+      /></v-toolbar-title>
         <v-spacer></v-spacer>
         <div class="d-none d-md-flex">
         <v-btn text>Home</v-btn>

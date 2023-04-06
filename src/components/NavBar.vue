@@ -6,7 +6,7 @@
         <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer" color="white"></v-app-bar-nav-icon>
 
     <!-- a link in vuetify -->
-        <v-btn href="/" class="no-hover" :ripple="false"><v-img
+        <v-btn href="/" class="no-hover" :ripple="false" icon="false" ><v-img
         contain
         height="50"
         width="50"

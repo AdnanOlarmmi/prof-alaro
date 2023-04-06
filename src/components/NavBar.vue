@@ -1,9 +1,9 @@
 <template>
     <v-app>
-      <v-app-bar app color="black" dark>
+      <v-app-bar app color="#993366" dark>
     <!-- show nav only on mobile -->
     <v-container class="d-flex ">
-        <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer"></v-app-bar-nav-icon>
+        <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer" color="white"></v-app-bar-nav-icon>
 
     <!-- a link in vuetify -->
         <v-btn href="/" class="no-hover"><v-img
@@ -16,10 +16,8 @@
     </v-container>
 
         <v-spacer></v-spacer>
-        <div class="d-none d-md-flex">
-        <v-btn text>Home</v-btn>
-        <v-btn text>About</v-btn>
-        <v-btn text>Contact</v-btn>
+        <div class="d-none d-md-flex" v-for="(item, index) in items" :key="index" >
+            <v-btn color="white" text>{{ item.title }}</v-btn>
         </div>
         
       </v-app-bar>

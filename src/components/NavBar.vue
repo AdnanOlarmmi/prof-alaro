@@ -2,16 +2,16 @@
     <v-app>
       <v-app-bar app color="#993366" dark>
     <!-- show nav only on mobile -->
-    <v-container class="d-flex ">
+    <v-container class="d-flex container">
         <v-app-bar-nav-icon class="d-md-none" @click="drawer = !drawer" color="white"></v-app-bar-nav-icon>
 
     <!-- a link in vuetify -->
-        <v-btn href="/" class="no-hover" :ripple="false" icon="false" ><v-img
+        <v-btn href="/" class="my-btn" :ripple="false" id="no-background-hover" ><v-img
         contain
         height="50"
         width="50"
         src="@/assets/logo.png"
-        alt="logo" class="no-hover"
+        alt="logo" class="no-hover my-btn"
       /></v-btn>
     </v-container>
 
@@ -35,6 +35,12 @@
       </v-main>
     </v-app>
   </template>
+
+<style scoped lang="scss">
+.my-btn:hover {
+  color: #993366 ;
+}
+</style>
   
   <script lang="ts">
   export default {
@@ -54,4 +60,7 @@
     }
   };
   </script>
+
+
+
   

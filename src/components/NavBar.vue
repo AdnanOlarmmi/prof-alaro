@@ -37,8 +37,13 @@
   </template>
 
 <style scoped lang="scss">
+@import url('https://fonts.googleapis.com/css2?family=Della+Respira:300,400,700&display=swap');
 .my-btn:hover {
   color: #993366 ;
+}
+
+html {
+    font-family: 'Della Respira', serif !important;
 }
 </style>
   
